@@ -11,13 +11,13 @@
   "dependencies": {
     "@npmcli/package-json": "3.0.0",
     "globby": "11.1.0",
-    "semver": "7.3.7"
+    "semver": "7.3.8"
   },
   "devDependencies": {
     "@tsconfig/node18": "1.0.1",
     "@types/node": "18.11.9",
     "@types/npmcli__package-json": "2.0.0",
-    "@types/semver": "7.3.12",
+    "@types/semver": "7.3.13",
     "tslib": "2.4.1",
     "typescript": "4.8.4"
   }
