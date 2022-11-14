@@ -2,6 +2,7 @@
   "name": "align-package-versions",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "build/bin/align-package-versions.js",
   "scripts": {
     "build": "tsc"

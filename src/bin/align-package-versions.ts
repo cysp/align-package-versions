@@ -1,7 +1,7 @@
 import PackageJson from "@npmcli/package-json";
 import { argv } from "node:process";
 import semver from "semver";
-import { loadWorkspacePackageJsons } from "../lib/package-json";
+import { loadWorkspacePackageJsons } from "../lib/package-json.js";
 
 function alignPackageVersions(packageJsons: PackageJson[], pattern: RegExp) {
   const version = findPackageVersion(packageJsons, pattern);
