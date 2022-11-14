@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@npmcli/package-json": "3.0.0",
-    "globby": "11.1.0",
+    "globby": "12.2.0",
     "semver": "7.3.8"
   },
   "devDependencies": {
