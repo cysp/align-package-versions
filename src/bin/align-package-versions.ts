@@ -62,7 +62,7 @@ function setPackageVersions(
       continue;
     }
 
-    for (const [packageName, _] of Object.entries(dependency)) {
+    for (const [packageName] of Object.entries(dependency)) {
       if (pattern.test(packageName)) {
         dependency[packageName] = version;
       }
