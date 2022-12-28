@@ -2,10 +2,13 @@
   "name": "align-package-versions",
   "version": "0.0.1",
   "description": "",
-  "main": "build/bin/align-package-versions.js",
+  "main": "build/lib/align-package-versions.js",
   "files": [
     "build"
   ],
+  "bin": {
+    "align-package-versions": "build/bin/align-package-versions.js"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint src"
