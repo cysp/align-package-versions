@@ -1,4 +1,4 @@
-import PackageJson from "@npmcli/package-json";
+import type PackageJson from "@npmcli/package-json";
 import semver from "semver";
 
 export function findGreatestPackageVersion(

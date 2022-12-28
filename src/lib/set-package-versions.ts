@@ -1,4 +1,4 @@
-import PackageJson from "@npmcli/package-json";
+import type PackageJson from "@npmcli/package-json";
 
 export function setPackageVersions(
   packageJson: PackageJson,

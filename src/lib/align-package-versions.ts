@@ -1,4 +1,4 @@
-import PackageJson from "@npmcli/package-json";
+import type PackageJson from "@npmcli/package-json";
 import { findGreatestPackageVersion } from "./find-package-versions";
 import { setPackageVersions } from "./set-package-versions";
 
