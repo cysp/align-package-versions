@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 import { argv } from "node:process";
-import { alignPackageVersions } from "../lib/align-package-versions";
-import { loadConfiguration } from "../lib/cosmiconfig";
-import { loadWorkspacePackageJsons } from "../lib/package-json";
+import {
+  alignPackageVersions,
+  loadConfiguration,
+  loadWorkspacePackageJsons,
+} from "../lib";
 
 async function main() {
   const config = await loadConfiguration();

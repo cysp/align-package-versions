@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/cysp/align-package-versions"
   },
-  "main": "build/lib/align-package-versions.js",
+  "main": "build/lib/index.js",
   "files": [
     "build"
   ],
