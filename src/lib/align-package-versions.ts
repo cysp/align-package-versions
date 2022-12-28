@@ -5,15 +5,17 @@ import { setPackageVersions } from "./set-package-versions";
 export function alignPackageVersions(
   packageJsons: PackageJson[],
   pattern: RegExp
-): boolean {
+): [false, string | null] | [true, string] {
   const version = findGreatestPackageVersion(packageJsons, pattern);
   if (!version) {
-    return false;
+    return [false, null];
   }
+
+  let modified = false;
 
   for (const packageJson of packageJsons) {
-    setPackageVersions(packageJson, pattern, version);
+    modified ||= setPackageVersions(packageJson, pattern, version);
   }
 
-  return true;
+  return [modified, version];
 }
