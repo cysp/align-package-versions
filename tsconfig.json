@@ -8,6 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "declaration": true,
 
     "strict": true /* Enable all strict type-checking options. */,
     "noImplicitThis": true /* Enable error reporting when 'this' is given the type 'any'. */,
