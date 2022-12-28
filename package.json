@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "build/bin/align-package-versions.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "eslint src"
