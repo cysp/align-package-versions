@@ -12,7 +12,13 @@ async function main() {
 
   const patterns = config?.patterns ?? argv.slice(2).map((s) => new RegExp(s));
   for (const pattern of patterns) {
-    alignPackageVersions(packageJsons, pattern);
+    console.log(pattern);
+    const [modified, version] = alignPackageVersions(packageJsons, pattern);
+    if (modified) {
+      console.log("  ", version);
+    } else {
+      console.log("  ~");
+    }
   }
 
   await Promise.all(packageJsons.map((packageJson) => packageJson.save()));
