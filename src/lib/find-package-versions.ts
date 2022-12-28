@@ -23,11 +23,11 @@ export function findPackageVersions(
   pattern: RegExp
 ): string[] {
   return packageJsons.flatMap(
-    (packageJson) => findPackageVersion(packageJson, pattern) ?? []
+    (packageJson) => findPackageVersions_(packageJson, pattern) ?? []
   );
 }
 
-export function findPackageVersion(
+function findPackageVersions_(
   packageJson: PackageJson,
   pattern: RegExp
 ): string[] {
